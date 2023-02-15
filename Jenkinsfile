@@ -1,7 +1,7 @@
 pipeline {
 
   environment {
-    dockerimagename = "extranet-igatn-extranet"
+    dockerimagename = "yahya/extranet"
     dockerImage = ""
   }
 
