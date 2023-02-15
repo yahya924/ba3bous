@@ -1,0 +1,16 @@
+# ignore .git and .mvn folders
+.git
+.mvn
+
+# ignore all *.class files in all folders, including build root
+**/*.class
+
+# ignore target folder and sub-folders
+target/*
+
+# ignore test folder
+src/test/*
+
+# ignore
+src/main/java/com/igatn/extranet/rest/fakeDB
+

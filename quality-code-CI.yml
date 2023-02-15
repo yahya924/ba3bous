@@ -1,0 +1,82 @@
+#-----------------------------------------------------------------------------------------------------------------------#
+# Project Extranet mobile Backend:                                                                                      #
+#   |__ pipeline Quality Code configuration                                                                             #
+#-----------------------------------------------------------------------------------------------------------------------#
+
+trigger: none
+
+pr:
+  - develop
+
+variables:
+  - name: 'isPR'
+    value: $[eq(variables['Build.Reason'], 'PullRequest')]
+  - name: 'isManual'
+    value: $[eq(variables['Build.Reason'], 'Manual')]
+  - name: 'branchName'
+    ${{ if eq(variables.isPR, true) }}:
+      value: $(System.PullRequest.SourceBranch)
+    ${{ if ne(variables.isPR, true)}}:
+      value: $(Build.SourceBranch)
+
+pool: Extranet-mobile
+
+steps:
+  - bash: |
+      $baseBranch="$(branchName)" -replace "refs/heads/", ""
+      echo "##vso[task.setvariable variable=BaseBranch;]$baseBranch"
+    displayName: Change Branch fullname
+
+  - bash: |
+      rm -rf /root/.m2/repository/com/igatn/extranet-igatn-domain-jpa/
+    displayName: Purge local .m2 repository
+
+  # Prepare Analysis Configuration task
+  - task: SonarQubePrepare@4
+    condition: and(succeeded(), eq(variables.isPR, 'true'))
+    displayName: 'Sonarqube Prepare For PullRequest Analysis'
+    inputs:
+      SonarQube: 'extranet-mobile-sonarqube'
+      scannerMode: Other
+      extraProperties: |
+        sonar.sourceEncoding=UTF-8
+        sonar.verbose=true
+        sonar.projectName=extranet-igatn
+        sonar.projectKey=EXTRANET_MOBILE_extranet-igatn_AYJn7zv3-dZgNAfYFF2s
+        sonar.pullrequest.key=$(System.PullRequest.PullRequestId)
+        sonar.pullrequest.branch=$(BaseBranch)
+        sonar.pullrequest.base=$(System.PullRequest.TargetBranch)
+
+  # Prepare Analysis Configuration task
+  - task: SonarQubePrepare@4
+    condition: and(succeeded(), eq(variables.isManual, 'true'))
+    displayName: 'Sonarqube Prepare For Manual Analysis'
+    inputs:
+      SonarQube: 'extranet-mobile-sonarqube'
+      scannerMode: Other
+      extraProperties: |
+        sonar.sourceEncoding=UTF-8
+        sonar.verbose=true
+        sonar.projectName=extranet-igatn
+        sonar.projectKey=EXTRANET_MOBILE_extranet-igatn_AYJn7zv3-dZgNAfYFF2s
+        sonar.branch.name=$(BaseBranch)
+
+  # Run Code Analysis task
+  - task: Maven@3
+    inputs:
+      mavenPomFile: 'pom.xml'
+      mavenOptions: '-Xmx3072m'
+      options: '-DskipTests=true'
+      javaHomeOption: 'path'
+      jdkDirectory: '/usr/lib/jvm/java-17-oracle'
+      sonarQubeRunAnalysis: True
+      sqMavenPluginVersionChoice: 'latest'
+      goals: clean package
+
+  # Publish Quality Gate Result task
+  - task: SonarQubePublish@4
+    displayName: 'Publish Quality Gate Result'
+    inputs:
+      pollingTimeoutSec: '300'
+
+

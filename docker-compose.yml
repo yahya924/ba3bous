@@ -1,0 +1,51 @@
+version: "3.8"
+
+services:
+  nginx:
+    container_name: NGINX
+    image: nginx
+    restart: always
+    ports:
+      - "81:81"
+    #      - "443:443"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+      - ./nginx/conf.d:/etc/nginx/conf.d
+      - documents:/usr/share/nginx/html:ro
+    networks:
+      - iga-network
+  extranet:
+    depends_on:
+      - nginx
+    # Path to dockerfile.
+    # '.' represents the current directory in which
+    # docker-compose.yml is present.
+    build: .
+    # Mapping of container port to host
+    ports:
+      - "8080:8080"
+    container_name: api_extranet
+    environment:
+      TZ: UTC-1
+      STRIPE_PUBLISHABLE_KEY: pk_test_51M4MHsDbEmk7L7mjMnQqxb6uJdXsgY2jRzekTCyYxq167jgiUdbyUrUY0S7WMRx6qyZI9JK7bFmgvnIP3z1ikbzf00tO31oCYc
+      STRIPE_SECRET_KEY: sk_test_51M4MHsDbEmk7L7mjKCpDrqdBts1r21BWDfHYNTByP3EHqcGBrsd17yd2oCjLxizzBP1nnkocOc8BRLQl1pDJsIVT00FGeXeTJS
+    volumes:
+      - documents:/usr/app/docs
+#      - "/etc/timezone:/etc/timezone:ro"
+#      - "/etc/localtime:/etc/localtime:ro"
+    networks:
+      - iga-network
+
+
+  sagilea:
+    build: src/main/java/com/igatn/extranet/rest/fakeDB/
+    container_name: fake-api
+    networks:
+      - iga-network
+
+networks:
+  iga-network:
+    name: extranet
+volumes:
+  documents:
+    name: extranet-documents

@@ -1,0 +1,43 @@
+#-----------------------------------------------------------------------------------------------------------------------#
+# Project Extranet mobile Backend:                                                                                      #
+#   |__ pipeline CI/CD configuration                                                                                    #
+#-----------------------------------------------------------------------------------------------------------------------#
+
+
+trigger:
+  branches:
+    include:
+      - release*
+
+#variables:
+#  - name: isRelease
+#    value: ${{ startsWith(variables['Build.SourceBranch'], 'refs/heads/release') }}
+
+pool: Extranet-mobile
+steps:
+  - checkout: self
+    clean: false
+    displayName: "Checkout"
+  - bash:  cp /root/.m2/settings.xml settings.xml
+    displayName: Copy settings configuration into the current directory
+  - bash: |
+      echo "Stops any runs containers"
+      docker-compose down
+      echo "Start building container images"
+      docker-compose build --no-cache
+      echo "Start Deployment APIs"
+      docker-compose up -d
+    displayName: "Backend Deployment"
+  - task: servbus.SendMail4VSTS.SendMail4VSTS.SendEmail@0
+    displayName: "Send an email with subject backend deployed"
+    inputs:
+      To: 'izarrouk@iga-tunisie.com, hgarali@iga-tunisie.com, ojarray@iga-tunisie.com, fregayeg@iga-tunisie.com, asghir@iga-tunisie.com, maznidi@iga-tunisie.com, mmeddeb@iga-tunisie.com'
+      From: 'noreply@iga-tunisie.com'
+      Subject: 'Backend successfully deployed'
+      Body: |
+        <p> Please be aware that extranet backend and fake-api are now operational on the recette server: http://192.168.14.73:8080 </p>
+      BodyAsHtml: true
+      SmtpServer: smtp.office365.com
+      SmtpUsername: 'noreply@iga-tunisie.com'
+      SmtpPassword: $(password_email)
+      STARTTLS: true
