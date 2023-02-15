@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test Notifications</title>
+
+    <link th:href="@{/styles/styles.css}" rel="stylesheet" />
+</head>
+<body>
+    <iframe name="formTarget" id="formTarget"></iframe>
+    
+    <form th:action="@{/notifications/send}" target="formTarget" th:object="${PARAMETERS}" method="get">
+        <span>
+            To send a notification to our user, log in on <strong>a standalone built MySeva app on a physical device</strong> 
+            with the credentials of our user. Make sure you are <strong>enabling notifications reception</strong>  
+            in the settings section. Choose the event that you want to send and click on send notification. You should 
+            receive the notification immediately.
+        </span>
+
+        <select id="USER_ID" th:field="*{username}" onchange="verifySubmitButton(this.value)">
+            <option value="">-- Select User --</option>
+
+            <option th:each="option : ${USERS}" th:value="${option.username}" th:text="${option.username}"></option>
+        </select>
+        
+        <select id="EVT_TYPE" th:field="*{evtType}" onchange="verifySubmitButton(this.value)">
+            <option value="">-- Select Event --</option>
+
+            <option th:each="option : ${EVENT_TYPES}" th:value="${option[0]}" th:text="${option[1]}"></option>
+        </select>
+
+        <button id="SEND_NOTIFICATIONS" type="submit" disabled>Send Notification</button>
+    </form>
+
+    <script>
+        const button = document.getElementById("SEND_NOTIFICATIONS");
+        
+        function verifySubmitButton(value) {
+            if (button) {
+                button.disabled = !value.length;
+            }
+        }
+    </script>
+</body>
+</html>

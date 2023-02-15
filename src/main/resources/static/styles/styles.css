@@ -1,0 +1,49 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background-color: #83C0D3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+iframe {
+    display: none;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+span {
+    width: 500px;
+    margin-bottom: 15px;
+    text-align: center;
+    line-height: 1.3;
+}
+
+select {
+    padding: 5px;
+    margin-bottom: 15px;
+    border: 2px solid black;
+    border-radius: 5px 5px 0 0;
+    cursor: pointer;
+}
+
+button {
+    padding: 5px 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+button:hover:enabled {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}

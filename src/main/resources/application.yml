@@ -1,0 +1,85 @@
+spring:    
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    properties:
+      hibernate:
+        format_sql: 'false'
+    defer-datasource-initialization: 'true'
+    show-sql: 'false'
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: zWtq5fy
+    username: afrique
+    url: 'jdbc:mysql://192.168.14.84:3306/extranet_mobile_jpa'
+  mail:
+    username: iga-notification@iga-tunisie.com
+    port: '587'
+    properties:
+      mail:
+        smtp:
+          starttls:
+            enable: 'true'
+            required: 'true'
+          auth: 'true'
+    host: smtp.office365.com
+    password: Woq01232
+  data:
+    rest:
+      base-path: /api
+      default-media-type: application/json
+  main:
+    allow-bean-definition-overriding: 'true'
+  servlet:
+    multipart:
+      max-file-size: 15MB
+      max-request-size: 15MB
+  session:
+    jdbc:
+      flush-mode: on_save
+      initialize-schema: always
+      table-name: SPRING_SESSION
+      
+
+logging:
+  level:
+    extranet-igatn: warn;
+
+igatn:
+  extranet:
+    security:
+      in-memory-user:
+        role: INSURANCE_SYSTEM
+        password: Iga1234!
+        username: extranet@igaeditions.com
+      headers:
+        no-interceptor-header: No-Interceptor
+        internal-encryption-key-header: Internal-Encryption-Key
+      expiration:
+        forget-password-period: 300000
+        otp-code: 90
+        otp-token: 120
+        jwt-token: 1800
+      keys:
+        aes-encryption-shared-key: b14ca5898a4e4133bbce2ea2315a1916
+        stripe-publishable-key: ${STRIPE_PUBLISHABLE_KEY}
+        stripe-secret-key: ${STRIPE_SECRET_KEY}
+        signing: 'helloO!IgaTunisieO!2022O!IgaTunisieO!helloO!'
+    notifications:
+      url: https://fcm.googleapis.com/v1/projects/extranet-mobile-e12c4/messages:send
+      scope: https://www.googleapis.com/auth/firebase.messaging
+      config-path: usr/app/config/extranet-mobile-service-account.json
+      apn-sandbox-url: https://iid.googleapis.com/iid/v1:batchImport
+      firebase-server-key: AAAA9byDtGM:APA91bFHxb6xkS1t9mTSusz91ASM5vPmS79Lz5jHkBnFzxFSCOSa3Zi6lRU4EipWMk48mnwEaCKY3YByG9lck2CJxs3icz8jVx78w26GMIOnCGqxtXbkcTDbg5R0y9XjKvovraicwY-x
+      ios-bundle-id: com.igatn.extranet
+    external-api:
+      url: http://fake-api:3000
+    mails:
+      side-recipient: hgarali@iga-tunisie.com
+      recipient: izarrouk@iga-tunisie.com
+    name: extranet-igatn
+    files:
+      static:
+        resources: usr/app/docs
+    

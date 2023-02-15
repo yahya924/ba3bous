@@ -1,0 +1,68 @@
+{
+  "notifications": [
+    {
+      "id": 59,
+      "title": "Elit excep",
+      "description": "Enim ex laboris eiusmod ullamco cupidata",
+      "creationDate": "2022-08-22T09:31:34 -01:00",
+      "type": "payment",
+      "seen": false
+    },
+    {
+      "id": 58,
+      "title": "Ipsum sit ",
+      "description": "Mollit ut enim qui ut dolore do.",
+      "creationDate": "2022-08-22T10:00:34 -01:00",
+      "type": "payment",
+      "seen": true
+    },
+    {
+      "id": 57,
+      "title": "Adipisicin",
+      "description": "Ipsum sint sunt culpa culpa exercitation",
+      "creationDate": "2022-08-20T03:00:29 -01:00",
+      "type": "exchange",
+      "seen": false
+    },
+    {
+      "id": 56,
+      "title": "In deserun",
+      "description": "Ullamco sint qui eiusmod aliquip laboris",
+      "creationDate": "2022-08-20T03:31:10 -01:00",
+      "type": "reimbursement",
+      "seen": true
+    },
+    {
+      "id": 55,
+      "title": "Ipsum do e",
+      "description": "Occaecat dolore consequat nostrud nulla ",
+      "creationDate": "2022-08-20T01:14:58 -01:00",
+      "type": "reimbursement",
+      "seen": true
+    },
+    {
+      "id": 54,
+      "title": "Ipscca ecat dolore psum",
+      "description": "Kccaecat Ipsum sint sunt nostrud nulla ",
+      "creationDate": "2022-08-19T01:14:58 -01:00",
+      "type": "reimbursement",
+      "seen": true
+    },
+    {
+      "id": 53,
+      "title": "ecat szaa colores spum",
+      "description": "Nostrud nulla Accaecat dolore dolora  ",
+      "creationDate": "2022-08-19T01:14:58 -01:00",
+      "type": "reimbursement",
+      "seen": true
+    },
+    {
+      "id": 52,
+      "title": "Ipsum jahnc aaa",
+      "description": "Occaecat dolore dolora nostrud nulla ",
+      "creationDate": "2022-08-19T01:14:58 -01:00",
+      "type": "reimbursement",
+      "seen": true
+    }
+  ]
+}

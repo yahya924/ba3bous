@@ -1,0 +1,185 @@
+{
+  "reimbursements": [
+    {
+      "id": 152,
+      "amount": 265,
+      "amountPaid": 215,
+      "titular": "Elvira Barrett",
+      "creationDate": "2020-06-01T04:21:04",
+      "paymentDate": "2021-08-29T05:06:46",
+      "status": "PD",
+      "hadMissingDocs": false
+    },
+    {
+      "id": 153,
+      "amount": 183,
+      "amountPaid": 133,
+      "titular": "Lola Kramer",
+      "creationDate": "2020-06-28T11:34:12",
+      "paymentDate": "2022-06-20T03:17:51",
+      "status": "PN",
+      "hadMissingDocs": false
+    },
+    {
+      "id": 154,
+      "amount": 86,
+      "amountPaid": 36,
+      "titular": "Carolina Murray",
+      "creationDate": "2021-08-26T12:17:15",
+      "paymentDate": "2021-01-28T06:30:27",
+      "status": "PN",
+      "hadMissingDocs": false
+    },
+    {
+      "id": 155,
+      "amount": 223,
+      "amountPaid": 173,
+      "titular": "Soto Elliott",
+      "creationDate": "2020-03-24T02:05:52",
+      "paymentDate": "2021-12-16T02:29:33",
+      "status": "PD",
+      "hadMissingDocs": true
+    },
+    {
+      "id": 156,
+      "amount": 193,
+      "amountPaid": 143,
+      "titular": "Mcfadden Mills",
+      "creationDate": "2021-02-06T08:23:33",
+      "paymentDate": "2020-02-05T07:16:40",
+      "status": "PN",
+      "hadMissingDocs": false
+    },
+    {
+      "id": 157,
+      "amount": 119,
+      "amountPaid": 69,
+      "titular": "Black Vasquez",
+      "creationDate": "2022-04-13T03:20:43",
+      "paymentDate": "2020-03-12T06:33:10",
+      "status": "PD",
+      "hadMissingDocs": true
+    },
+    {
+      "id": 158,
+      "amount": 252,
+      "amountPaid": 202,
+      "titular": "Bowers Tyson",
+      "creationDate": "2020-07-20T12:06:34",
+      "paymentDate": "2020-04-09T07:04:57",
+      "status": "PD",
+      "hadMissingDocs": false
+    },
+    {
+      "id": 159,
+      "amount": 153,
+      "amountPaid": 103,
+      "titular": "Lessie Mcdonald",
+      "creationDate": "2022-01-19T02:07:20",
+      "paymentDate": "2021-06-09T10:47:52",
+      "status": "PD",
+      "hadMissingDocs": false
+    },
+    {
+      "id": 160,
+      "amount": 232,
+      "amountPaid": 182,
+      "titular": "Case Decker",
+      "creationDate": "2021-03-05T02:46:43",
+      "paymentDate": "2021-08-18T07:13:39",
+      "status": "PN",
+      "hadMissingDocs": false
+    },
+    {
+      "id": 161,
+      "amount": 214,
+      "amountPaid": 164,
+      "titular": "Hilary Swanson",
+      "creationDate": "2022-03-04T07:13:07",
+      "paymentDate": "2021-09-20T04:52:24",
+      "status": "IP",
+      "hadMissingDocs": false
+    },
+    {
+      "id": 162,
+      "amount": 272,
+      "amountPaid": 222,
+      "titular": "Michele Dyer",
+      "creationDate": "2020-03-19T09:16:41",
+      "paymentDate": "2020-02-18T05:40:58",
+      "status": "IP",
+      "hadMissingDocs": true
+    },
+    {
+      "id": 163,
+      "amount": 180,
+      "amountPaid": 130,
+      "titular": "Marylou Reese",
+      "creationDate": "2022-05-17T08:53:50",
+      "paymentDate": "2021-06-28T01:55:55",
+      "status": "IP",
+      "hadMissingDocs": false
+    },
+    {
+      "id": 164,
+      "amount": 68,
+      "amountPaid": 18,
+      "titular": "Nellie Kerr",
+      "creationDate": "2022-06-02T04:23:47",
+      "paymentDate": "2022-04-10T12:32:02",
+      "status": "PD",
+      "hadMissingDocs": true
+    },
+    {
+      "id": 165,
+      "amount": 105,
+      "amountPaid": 55,
+      "titular": "Beach Harvey",
+      "creationDate": "2020-08-01T09:02:43",
+      "paymentDate": "2021-06-04T03:34:11",
+      "status": "PD",
+      "hadMissingDocs": true
+    },
+    {
+      "id": 166,
+      "amount": 59,
+      "amountPaid": 9,
+      "titular": "Amie Johns",
+      "creationDate": "2021-07-17T12:16:55",
+      "paymentDate": "2022-01-13T02:17:13",
+      "status": "PD",
+      "hadMissingDocs": true
+    },
+    {
+      "id": 167,
+      "amount": 182,
+      "amountPaid": 132,
+      "titular": "Kendra Atkins",
+      "creationDate": "2022-06-13T04:20:10",
+      "paymentDate": "2020-08-12T02:54:16",
+      "status": "PN",
+      "hadMissingDocs": false
+    },
+    {
+      "id": 168,
+      "amount": 55,
+      "amountPaid": 5,
+      "titular": "Hartman Tucker",
+      "creationDate": "2022-01-11T11:34:00",
+      "paymentDate": "2021-12-03T12:54:25",
+      "status": "PD",
+      "hadMissingDocs": true
+    },
+    {
+      "id": 169,
+      "amount": 50,
+      "amountPaid": 0,
+      "titular": "Fitzpatrick Sparks",
+      "creationDate": "2020-08-24T03:41:01",
+      "paymentDate": "2020-03-25T07:52:14",
+      "status": "PD",
+      "hadMissingDocs": false
+    }
+  ]
+}
+

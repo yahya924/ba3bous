@@ -1,0 +1,918 @@
+{
+  "userDetails": {
+    "role": "Insured",
+    "email": "310049@test.com",
+    "clientNumber": "123456",
+    "firstName": "Yassine",
+    "lastName": "Gara",
+    "birthDate": "1990-10-22",
+    "nationality": "Française",
+    "phones": {
+      "personalPhone": {
+        "prefix": "+33",
+        "number": "123456789"
+      },
+      "professionalPhone": {
+        "prefix": "+33",
+        "number": "123456789"
+      },
+      "mobilePhone": {
+        "prefix": "+33",
+        "number": "123456789"
+      }
+    },
+    "postalAddress": "Paris, France",
+    "logo": "https://www.creads.com/wp-content/uploads/2021/05/axa-logo-1024x1024-1-1024x1024.jpg",
+    "hasIndividualPolicies": true
+  },
+  "exchanges": [
+    {
+      "id": 1,
+      "title": "Lorem ipsum dolor sit amet 1",
+      "sens": "SN",
+      "source": "Extranet",
+      "creationDate": "22/02/2022",
+      "status": "SN"
+    },
+    {
+      "id": 2,
+      "title": "Lorem ipsum dolor sit amet 2",
+      "sens": "RC",
+      "source": "Email",
+      "creationDate": "01/03/2022",
+      "status": "SN"
+    },
+    {
+      "id": 3,
+      "title": "Lorem ipsum dolor sit amet 3",
+      "sens": "RC",
+      "source": "Extranet",
+      "creationDate": "01/04/2022",
+      "status": "IP"
+    },
+    {
+      "id": 4,
+      "title": "Lorem ipsum dolor sit amet 4",
+      "sens": "RC",
+      "source": "Extranet",
+      "creationDate": "10/04/2022",
+      "status": "PN"
+    },
+    {
+      "id": 5,
+      "title": "Lorem ipsum dolor sit amet 5",
+      "sens": "RC",
+      "source": "Mail",
+      "creationDate": "22/01/2000",
+      "status": "IP"
+    },
+    {
+      "id": 6,
+      "title": "Lorem ipsum dolor sit amet 6",
+      "sens": "RC",
+      "source": "Mail",
+      "creationDate": "11/04/2022",
+      "status": "PN"
+    },
+    {
+      "id": 7,
+      "title": "Lorem ipsum dolor sit amet 7",
+      "sens": "RC",
+      "source": "Sagilea",
+      "creationDate": "26/06/2022",
+      "status": "SN"
+    },
+    {
+      "id": 8,
+      "title": "Lorem ipsum dolor sit amet 8",
+      "sens": "RC",
+      "source": "Extranet",
+      "creationDate": "10/07/2022",
+      "status": "PN"
+    },
+    {
+      "id": 9,
+      "title": "Lorem ipsum dolor sit amet 9",
+      "sens": "RC",
+      "source": "Sagilea",
+      "creationDate": "01/01/2011",
+      "status": "IP"
+    },
+    {
+      "id": 10,
+      "title": "Lorem ipsum dolor sit amet 10",
+      "sens": "RC",
+      "source": "Extranet",
+      "creationDate": "11/04/2022",
+      "status": "PN"
+    },
+    {
+      "id": 11,
+      "title": "Lorem ipsum dolor sit amet 11",
+      "sens": "RC",
+      "source": "Extranet",
+      "creationDate": "10/04/2022",
+      "status": "PN"
+    }
+  ],
+  "reimbursements": [
+    {
+      "id": 152,
+      "amount": 265,
+      "amountPaid": 215,
+      "titular": "Elvira Barrett",
+      "creationDate": "2020-06-01T04:21:04",
+      "paymentDate": "2021-08-29T05:06:46",
+      "status": "PD",
+      "hadMissingDocs": false
+    },
+    {
+      "id": 153,
+      "amount": 183,
+      "amountPaid": 133,
+      "titular": "Lola Kramer",
+      "creationDate": "2020-06-28T11:34:12",
+      "paymentDate": "2022-06-20T03:17:51",
+      "status": "PN",
+      "hadMissingDocs": false
+    },
+    {
+      "id": 154,
+      "amount": 86,
+      "amountPaid": 36,
+      "titular": "Carolina Murray",
+      "creationDate": "2021-08-26T12:17:15",
+      "paymentDate": "2021-01-28T06:30:27",
+      "status": "PN",
+      "hadMissingDocs": false
+    },
+    {
+      "id": 155,
+      "amount": 223,
+      "amountPaid": 173,
+      "titular": "Soto Elliott",
+      "creationDate": "2020-03-24T02:05:52",
+      "paymentDate": "2021-12-16T02:29:33",
+      "status": "PD",
+      "hadMissingDocs": true
+    },
+    {
+      "id": 156,
+      "amount": 193,
+      "amountPaid": 143,
+      "titular": "Mcfadden Mills",
+      "creationDate": "2021-02-06T08:23:33",
+      "paymentDate": "2020-02-05T07:16:40",
+      "status": "PN",
+      "hadMissingDocs": false
+    },
+    {
+      "id": 157,
+      "amount": 119,
+      "amountPaid": 69,
+      "titular": "Black Vasquez",
+      "creationDate": "2022-04-13T03:20:43",
+      "paymentDate": "2020-03-12T06:33:10",
+      "status": "PD",
+      "hadMissingDocs": true
+    },
+    {
+      "id": 158,
+      "amount": 252,
+      "amountPaid": 202,
+      "titular": "Bowers Tyson",
+      "creationDate": "2020-07-20T12:06:34",
+      "paymentDate": "2020-04-09T07:04:57",
+      "status": "PD",
+      "hadMissingDocs": false
+    },
+    {
+      "id": 159,
+      "amount": 153,
+      "amountPaid": 103,
+      "titular": "Lessie Mcdonald",
+      "creationDate": "2022-01-19T02:07:20",
+      "paymentDate": "2021-06-09T10:47:52",
+      "status": "PD",
+      "hadMissingDocs": false
+    },
+    {
+      "id": 160,
+      "amount": 232,
+      "amountPaid": 182,
+      "titular": "Case Decker",
+      "creationDate": "2021-03-05T02:46:43",
+      "paymentDate": "2021-08-18T07:13:39",
+      "status": "PN",
+      "hadMissingDocs": false
+    },
+    {
+      "id": 161,
+      "amount": 214,
+      "amountPaid": 164,
+      "titular": "Hilary Swanson",
+      "creationDate": "2022-03-04T07:13:07",
+      "paymentDate": "2021-09-20T04:52:24",
+      "status": "IP",
+      "hadMissingDocs": false
+    },
+    {
+      "id": 162,
+      "amount": 272,
+      "amountPaid": 222,
+      "titular": "Michele Dyer",
+      "creationDate": "2020-03-19T09:16:41",
+      "paymentDate": "2020-02-18T05:40:58",
+      "status": "IP",
+      "hadMissingDocs": true
+    },
+    {
+      "id": 163,
+      "amount": 180,
+      "amountPaid": 130,
+      "titular": "Marylou Reese",
+      "creationDate": "2022-05-17T08:53:50",
+      "paymentDate": "2021-06-28T01:55:55",
+      "status": "IP",
+      "hadMissingDocs": false
+    },
+    {
+      "id": 164,
+      "amount": 68,
+      "amountPaid": 18,
+      "titular": "Nellie Kerr",
+      "creationDate": "2022-06-02T04:23:47",
+      "paymentDate": "2022-04-10T12:32:02",
+      "status": "PD",
+      "hadMissingDocs": true
+    },
+    {
+      "id": 165,
+      "amount": 105,
+      "amountPaid": 55,
+      "titular": "Beach Harvey",
+      "creationDate": "2020-08-01T09:02:43",
+      "paymentDate": "2021-06-04T03:34:11",
+      "status": "PD",
+      "hadMissingDocs": true
+    },
+    {
+      "id": 166,
+      "amount": 59,
+      "amountPaid": 9,
+      "titular": "Amie Johns",
+      "creationDate": "2021-07-17T12:16:55",
+      "paymentDate": "2022-01-13T02:17:13",
+      "status": "PD",
+      "hadMissingDocs": true
+    },
+    {
+      "id": 167,
+      "amount": 182,
+      "amountPaid": 132,
+      "titular": "Kendra Atkins",
+      "creationDate": "2022-06-13T04:20:10",
+      "paymentDate": "2020-08-12T02:54:16",
+      "status": "PN",
+      "hadMissingDocs": false
+    },
+    {
+      "id": 168,
+      "amount": 55,
+      "amountPaid": 5,
+      "titular": "Hartman Tucker",
+      "creationDate": "2022-01-11T11:34:00",
+      "paymentDate": "2021-12-03T12:54:25",
+      "status": "PD",
+      "hadMissingDocs": true
+    },
+    {
+      "id": 169,
+      "amount": 50,
+      "amountPaid": 0,
+      "titular": "Fitzpatrick Sparks",
+      "creationDate": "2020-08-24T03:41:01",
+      "paymentDate": "2020-03-25T07:52:14",
+      "status": "PD",
+      "hadMissingDocs": false
+    }
+  ],
+  "activities": [
+    {
+      "type": "ECL",
+      "date": "2019-08-24T14:15:22Z",
+      "subject": "Amine sghir",
+      "content": "Un paragraphe est une section de texte en prose vouée au développement d'un point particulier souvent au moyen de plusieurs phrases, dans la continuité du précédent et du suivant. Sur le plan typographique, le paragraphe est compris entre deux alinéas, qui s'analysent aussi comme une « ponctuation blanche ».",
+      "files": [
+        {
+          "name": "file1",
+          "mimeType": "PDF",
+          "url": "http://www.africau.edu/images/default/sample.pdf",
+          "size": 0
+        }
+      ]
+    },
+    {
+      "type": "MDU",
+      "date": "2019-08-24T14:15:22Z",
+      "subject": "subject_claiming",
+      "content": "this is an example of pending document for claiming",
+      "files": [
+        {
+          "name": "file2",
+          "mimeType": "string",
+          "url": "http://www.africau.edu/images/default/sample.pdf",
+          "size": 0
+        }
+      ]
+    },
+    {
+      "type": "CPL",
+      "date": "2019-08-24T14:15:22Z",
+      "subject": "complaint 1",
+      "content": "Une plainte constitue le fait de rapporter une activité, un état de choses ou un comportement répréhensible à une autorité administrative, civile, pénale ou disciplinaire.",
+      "files": [
+        {
+          "name": "file3",
+          "mimeType": "PDF",
+          "url": "https://www.orimi.com/pdf-test.pdf",
+          "size": 0
+        },
+        {
+          "name": "file4",
+          "mimeType": "PDF",
+          "url": "https://www.orimi.com/pdf-test.pdf",
+          "size": 0
+        },
+        {
+          "name": "file5",
+          "mimeType": "PDF",
+          "url": "https://www.orimi.com/pdf-test.pdf",
+          "size": 0
+        },
+        {
+          "name": "file6",
+          "mimeType": "PDF",
+          "url": "https://www.orimi.com/pdf-test.pdf",
+          "size": 0
+        }
+      ]
+    },
+    {
+      "type": "PRP",
+      "date": "2019-08-24T14:15:22Z",
+      "subject": "Total payment 360000",
+      "content": "content premiums"
+    },
+    {
+      "type": "PWD",
+      "date": "10/10/2010"
+    },
+    {
+      "type": "MDU",
+      "date": "2019-08-24T14:15:22Z",
+      "subject": "Foulen ben foulen",
+      "content": "You can report a tip to us, through a separate process if you are a current or former employee of a company that has violated federal consumer financial laws or if you are an industry insider who knows about such a company.",
+      "files": [
+        {
+          "name": "file7",
+          "mimeType": "PDF",
+          "url": "https://www.orimi.com/pdf-test.pdf",
+          "size": 0
+        }
+      ]
+    }
+  ],
+  "policies": [
+    {
+      "id": "62d2e4d7b2fb646f63e21d8f",
+      "risk": "Autre",
+      "startDate": "2021-12-03",
+      "endDate": "2022-12-01",
+      "currency": "EUR",
+      "sumBeneficiaries": 1,
+      "beneficiaries": [
+        {
+          "id": "62d2e4d7376b22d1fbbb9852",
+          "firstName": "Yassine",
+          "lastName": "Gaara",
+          "relation": "Assuré",
+          "NSS": 61418831521,
+          "birthDate": "1990-10-22"
+        },
+        {
+          "id": "62d2e4d7376b22d1fbba5849",
+          "firstName": "Mcmahon",
+          "lastName": "Mcmillan",
+          "relation": "Enfant",
+          "NSS": 72448831533,
+          "birthDate": "2018-11-21"
+        }
+      ],
+      "bankAccounts": [
+        {
+          "link": "P",
+          "paymentMode": "Chèque",
+          "iban": 5719377994500446,
+          "currency": "USD"
+        }
+      ],
+      "guarantees": [
+        {
+          "id": "62d2e4d780eaa3573c8fc897",
+          "name": "duis ut in"
+        },
+        {
+          "id": "62d2e4d7dd86424a25adaac8",
+          "name": "est consequat ad"
+        },
+        {
+          "id": "62d2e4d7b26e8c2e88947daf",
+          "name": "cupidatat tempor reprehenderit"
+        },
+        {
+          "id": "62d2e4d779e663e89b976734",
+          "name": "laboris ipsum dolor"
+        },
+        {
+          "id": "62d2e4d7dcd33454133798d4",
+          "name": "dolore fugiat sint"
+        }
+      ],
+      "documents": [
+        {
+          "id": "62d2e4d79445708364765df8",
+          "name": "nisi non nostrud",
+          "url": "https://www.clickdimensions.com/links/TestPDFfile.pdf"
+        },
+        {
+          "id": "62d2e4d72831b3be528d88f8",
+          "name": "commodo enim id",
+          "url": "http://www.africau.edu/images/default/sample.pdf"
+        }
+      ]
+    },
+    {
+      "id": "62d2e4d71bba8bef16eb1400",
+      "risk": "Santé",
+      "startDate": "2021-12-07",
+      "endDate": "2022-12-18",
+      "currency": "EUR",
+      "sumBeneficiaries": 3,
+      "beneficiaries": [
+        {
+          "id": "62d2e4d7376b22d1fbbb9852",
+          "firstName": "Yassine",
+          "lastName": "Gaara",
+          "relation": "Assuré",
+          "NSS": 61418831521,
+          "birthDate": "1990-10-22"
+        },
+        {
+          "id": "62d2e4d74251ac9ea5dd03e5",
+          "firstName": "Boyle",
+          "lastName": "Mayer",
+          "relation": "Enfant",
+          "NSS": 34767296502,
+          "birthDate": "2013-03-04"
+        },
+        {
+          "id": "62d2e4d7ad05364b5becbd37",
+          "firstName": "Cantu",
+          "lastName": "Rollins",
+          "relation": "Enfant",
+          "NSS": 21136599865,
+          "birthDate": "2015-05-17"
+        },
+        {
+          "id": "62d2e4d78fde24bf88210aba",
+          "firstName": "Gladys",
+          "lastName": "Warner",
+          "relation": "Enfant",
+          "NSS": 87527182745,
+          "birthDate": "2015-02-21"
+        }
+      ],
+      "bankAccounts": [
+        {
+          "link": "P",
+          "paymentMode": "Virement",
+          "iban": 5494125912460400,
+          "currency": "USD"
+        },
+        {
+          "link": "C",
+          "paymentMode": "Chèque",
+          "iban": 8376293718723320,
+          "currency": "USD"
+        }
+      ],
+      "guarantees": [
+        {
+          "id": "62d2e4d7e2cdef4e24ed9580",
+          "name": "tempor Lorem minim"
+        },
+        {
+          "id": "62d2e4d7bcd569992687afef",
+          "name": "irure culpa fugiat"
+        },
+        {
+          "id": "62d2e4d7b99b62e6bc62846e",
+          "name": "aliqua adipisicing ullamco"
+        },
+        {
+          "id": "62d2e4d749d077fe6a182fab",
+          "name": "ipsum ullamco anim"
+        },
+        {
+          "id": "62d2e4d7542b6792c1fe868e",
+          "name": "dolor pariatur ad"
+        }
+      ],
+      "documents": [
+        {
+          "id": "62d2e4d795b37c137921ff50",
+          "name": "eu pariatur magna",
+          "url": "http://www.africau.edu/images/default/sample.pdf"
+        },
+        {
+          "id": "62d2e4d7e2e7e07c09084884",
+          "name": "id esse voluptate",
+          "url": "https://www.clickdimensions.com/links/TestPDFfile.pdf"
+        }
+      ]
+    }
+  ],
+  "documents": [
+    {
+      "id": 1,
+      "name": "Document 1",
+      "beneficiaryName": "Amine sghir",
+      "url": "http://www.africau.edu/images/default/sample.pdf"
+    },
+    {
+      "id": 2,
+      "name": "Document 2,",
+      "beneficiaryName": "Jhon Doe",
+      "url": "https://www.antennahouse.com/hubfs/xsl-fo-sample/pdf/basic-link-1.pdf?hsLang=en"
+    },
+    {
+      "id": 3,
+      "name": "Document 3,",
+      "beneficiaryName": "Mohamed foulen",
+      "url": "https://www.antennahouse.com/hubfs/xsl-fo-sample/pdf/basic-link-1.pdf?hsLang=en"
+    },
+    {
+      "id": 4,
+      "name": "Document 4,",
+      "beneficiaryName": "Eric",
+      "url": "https://www.clickdimensions.com/links/TestPDFfile.pdf"
+    },
+    {
+      "id": 5,
+      "name": "Document 5,",
+      "beneficiaryName": "Test Test",
+      "url": "https://www.clickdimensions.com/links/TestPDFfile.pdf"
+    },
+    {
+      "id": 6,
+      "name": "Document 6,",
+      "beneficiaryName": "Dali",
+      "url": "https://www.clickdimensions.com/links/TestPDFfile.pdf"
+    },
+    {
+      "id": 7,
+      "name": "Document 5,",
+      "beneficiaryName": "Extranet",
+      "url": "https://www.clickdimensions.com/links/TestPDFfile.pdf"
+    },
+    {
+      "id": 8,
+      "name": "Document 5,",
+      "beneficiaryName": "Sagilia",
+      "url": "https://www.clickdimensions.com/links/TestPDFfile.pdf"
+    }
+  ],
+  "premiums": [
+    {
+      "id": 1,
+      "amount": 100000,
+      "from": "2022-01-02",
+      "to": "2022-01-03",
+      "due": "2022-01-04",
+      "paymentDate": "2022-01-04",
+      "status": "PD"
+    },
+    {
+      "id": 2,
+      "amount": 200000,
+      "from": "2022-02-02",
+      "to": "2022-02-03",
+      "due": "2022-02-04",
+      "paymentDate": "2022-02-04",
+      "status": "PN"
+    },
+    {
+      "id": 3,
+      "amount": 300000,
+      "from": "2022-03-02",
+      "to": "2022-03-03",
+      "due": "2022-03-04",
+      "paymentDate": "2022-03-04",
+      "status": "PD"
+    },
+    {
+      "id": 4,
+      "amount": 400000,
+      "from": "2022-04-02",
+      "to": "2022-04-03",
+      "due": "2022-04-04",
+      "paymentDate": "2022-04-04",
+      "status": "PN"
+    },
+    {
+      "id": 5,
+      "amount": 500000,
+      "from": "2022-05-02",
+      "to": "2022-05-03",
+      "due": "2022-05-04",
+      "paymentDate": "2022-05-04",
+      "status": "PD"
+    },
+    {
+      "id": 6,
+      "amount": 600000,
+      "from": "2022-06-02",
+      "to": "2022-06-03",
+      "due": "2022-06-04",
+      "paymentDate": "2022-06-04",
+      "status": "PD"
+    },
+    {
+      "id": 7,
+      "amount": 700000,
+      "from": "2022-07-02",
+      "to": "2022-07-03",
+      "due": "2022-07-04",
+      "paymentDate": "2022-07-04",
+      "status": "PN"
+    }
+  ],
+  "notifications": [
+    {
+      "id": 59,
+      "title": "Elit excep",
+      "description": "Enim ex laboris eiusmod ullamco cupidata",
+      "creationDate": "2022-08-22T09:31:34 -01:00",
+      "type": "payment",
+      "seen": false
+    },
+    {
+      "id": 58,
+      "title": "Ipsum sit ",
+      "description": "Mollit ut enim qui ut dolore do.",
+      "creationDate": "2022-08-22T10:00:34 -01:00",
+      "type": "payment",
+      "seen": true
+    },
+    {
+      "id": 57,
+      "title": "Adipisicin",
+      "description": "Ipsum sint sunt culpa culpa exercitation",
+      "creationDate": "2022-08-20T03:00:29 -01:00",
+      "type": "exchange",
+      "seen": false
+    },
+    {
+      "id": 56,
+      "title": "In deserun",
+      "description": "Ullamco sint qui eiusmod aliquip laboris",
+      "creationDate": "2022-08-20T03:31:10 -01:00",
+      "type": "reimbursement",
+      "seen": true
+    },
+    {
+      "id": 55,
+      "title": "Ipsum do e",
+      "description": "Occaecat dolore consequat nostrud nulla ",
+      "creationDate": "2022-08-20T01:14:58 -01:00",
+      "type": "reimbursement",
+      "seen": true
+    },
+    {
+      "id": 54,
+      "title": "Ipscca ecat dolore psum",
+      "description": "Kccaecat Ipsum sint sunt nostrud nulla ",
+      "creationDate": "2022-08-19T01:14:58 -01:00",
+      "type": "reimbursement",
+      "seen": true
+    },
+    {
+      "id": 53,
+      "title": "ecat szaa colores spum",
+      "description": "Nostrud nulla Accaecat dolore dolora  ",
+      "creationDate": "2022-08-19T01:14:58 -01:00",
+      "type": "reimbursement",
+      "seen": true
+    },
+    {
+      "id": 52,
+      "title": "Ipsum jahnc aaa",
+      "description": "Occaecat dolore dolora nostrud nulla ",
+      "creationDate": "2022-08-19T01:14:58 -01:00",
+      "type": "reimbursement",
+      "seen": true
+    }
+  ],
+  "missingDocsPL": {
+    "success": true,
+    "totalResults": 5,
+    "items": [
+      {
+        "type": "PL",
+        "entityId": "300985",
+        "beneficiaryFirstName": "Yassine",
+        "beneficiaryLastName": "gara hilel",
+        "label": "Assuré",
+        "date": "2019-08-24T00:00:00",
+        "missingDocs": [
+          {
+            "id": 41,
+            "name": "Copie de pièce d'identité ou de passeport",
+            "mandatory": false
+          }
+        ]
+      },
+      {
+        "type": "PL",
+        "entityId": "370985",
+        "beneficiaryFirstName": "Yassine",
+        "beneficiaryLastName": "gara hilel",
+        "label": "Enfant",
+        "date": "2019-08-24T00:00:00",
+        "missingDocs": [
+          {
+            "id": 51,
+            "name": "Copie de pièce d'identité ou de passeport",
+            "mandatory": true
+          }
+        ]
+      },
+      {
+        "type": "PL",
+        "entityId": "340985",
+        "beneficiaryFirstName": "Yassine",
+        "beneficiaryLastName": "gara hilel",
+        "label": "Assuré",
+        "date": "2019-08-24T00:00:00",
+        "missingDocs": [
+          {
+            "id": 61,
+            "name": "Copie de pièce d'identité ou de passeport",
+            "mandatory": true
+          },
+          {
+            "id": 61,
+            "name": "Copie de pièce d'identité ou de passeport",
+            "mandatory": true
+          },
+          {
+            "id": 61,
+            "name": "Copie de pièce d'identité ou de passeport",
+            "mandatory": false
+          }
+        ]
+      },
+      {
+        "type": "PL",
+        "entityId": "320985",
+        "beneficiaryFirstName": "Yassine",
+        "beneficiaryLastName": "gara hilel",
+        "label": "Assuré",
+        "date": "2019-08-24T00:00:00",
+        "missingDocs": [
+          {
+            "id": 71,
+            "name": "Copie de pièce d'identité ou de passeport",
+            "mandatory": true
+          }
+        ]
+      },
+      {
+        "type": "PL",
+        "entityId": "340985",
+        "beneficiaryFirstName": "Yasmine",
+        "beneficiaryLastName": "gara hilel",
+        "label": "Conjoint(e)",
+        "date": "2019-08-24T00:00:00",
+        "missingDocs": [
+          {
+            "id": 81,
+            "name": "Copie de pièce d'identité ou de passeport",
+            "mandatory": true
+          },
+          {
+            "id": 82,
+            "name": "Copie de pièce d'identité ou de passeport",
+            "mandatory": false
+          },
+          {
+            "id": 82,
+            "name": "Copie de pièce d'identité ou de passeport",
+            "mandatory": false
+          }
+        ]
+      }
+    ]
+  },
+  "missingDocsRM": {
+    "success": true,
+    "totalResults": 5,
+    "items": [
+      {
+        "type": "RM",
+        "entityId": "0200089745",
+        "beneficiaryFirstName": "Yassine",
+        "beneficiaryLastName": "gara hilel",
+        "label": "Hospitalisation",
+        "date": "2019-08-24T00:00:00",
+        "status": "OD",
+        "missingDocs": [
+          {
+            "id": 11,
+            "name": "Copie de pièce d'identité ou de passeport",
+            "mandatory": false
+          }
+        ]
+      },
+      {
+        "type": "RM",
+        "entityId": "0300089745",
+        "beneficiaryFirstName": "Yassine",
+        "beneficiaryLastName": "gara hilel",
+        "label": "Pharmacie",
+        "date": "2019-08-24T00:00:00",
+        "status": "UR",
+        "missingDocs": [
+          {
+            "id": 11,
+            "name": "Copie de pièce d'identité ou de passeport"
+          }
+        ]
+      },
+      {
+        "type": "RM",
+        "entityId": "0201089745",
+        "beneficiaryFirstName": "Yassine",
+        "beneficiaryLastName": "gara hilel",
+        "label": "Radiographie",
+        "date": "2019-08-24T00:00:00",
+        "status": "NW",
+        "missingDocs": [
+          {
+            "id": 11,
+            "name": "Copie de pièce d'identité ou de passeport"
+          },
+          {
+            "id": 12,
+            "name": "Copie de pièce d'identité ou de passeport"
+          },
+          {
+            "id": 3,
+            "name": "Feuille de soins (Format CERFA)"
+          }
+        ]
+      },
+      {
+        "type": "RM",
+        "entityId": "0205089745",
+        "beneficiaryFirstName": "Yassine",
+        "beneficiaryLastName": "gara hilel",
+        "label": "Pharmacie",
+        "date": "2019-08-24T00:00:00",
+        "status": "NW",
+        "missingDocs": [
+          {
+            "id": 21,
+            "name": "Copie de pièce d'identité ou de passeport"
+          }
+        ]
+      },
+      {
+        "type": "RM",
+        "entityId": "0200289745",
+        "beneficiaryFirstName": "Yassine",
+        "beneficiaryLastName": "gara hilel",
+        "label": "Pharmacie",
+        "date": "2019-08-24T00:00:00",
+        "status": "UR",
+        "missingDocs": [
+          {
+            "id": 31,
+            "name": "Copie de pièce d'identité ou de passeport"
+          }
+        ]
+      }
+    ]
+  }
+}

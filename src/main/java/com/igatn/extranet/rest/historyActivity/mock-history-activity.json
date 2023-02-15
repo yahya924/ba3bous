@@ -1,0 +1,60 @@
+{
+    "activities": [
+      {
+        "type": "ECL",
+        "date": "2019-08-24T14:15:22Z",
+        "patient": "extranet",
+        "content": "blabalablabalbla",
+        "files": [
+          {
+            "name": "file1",
+            "mimeType": "string",
+            "url": "http://www.africau.edu/images/default/sample.pdf",
+            "size": 0
+          }
+        ]
+      },
+      {
+        "type": "MDU",
+        "date": "2019-08-24T14:15:22Z",
+        "patient": "sagilia",
+        "content": "hello helloo",
+        "files": [
+          {
+            "name": "file2",
+            "mimeType": "string",
+            "url": "http://www.africau.edu/images/default/sample.pdf",
+            "size": 0
+          }
+        ]
+      },
+      {
+        "type": "CPL",
+        "date": "2019-08-24T14:15:22Z",
+        "patient": "iga",
+        "content": "salut salut",
+        "files": [
+          {
+            "name": "file3",
+            "mimeType": "string",
+            "url": "https://www.orimi.com/pdf-test.pdf",
+            "size": 0
+          }
+        ]
+      },
+      {
+        "type": "PRP",
+        "date": "2019-08-24T14:15:22Z",
+        "patient": "amine",
+        "content": "bonjour bonjout",
+        "files": [
+          {
+            "name": "file4",
+            "mimeType": "string",
+            "url": "https://www.orimi.com/pdf-test.pdf",
+            "size": 0
+          }
+        ]
+      }
+    ]
+}

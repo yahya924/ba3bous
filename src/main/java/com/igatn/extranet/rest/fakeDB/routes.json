@@ -1,0 +1,4 @@
+{
+  "/users/missingDocs/getAll?type=PL": "/missingDocsPL",
+  "/users/missingDocs/getAll?type=RM": "/missingDocsRM"
+}

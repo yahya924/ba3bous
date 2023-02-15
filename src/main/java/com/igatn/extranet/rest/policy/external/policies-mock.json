@@ -1,0 +1,133 @@
+{
+  "policies": [
+    {
+      "id": "62d3184325898e08fdb1d86d",
+      "risk": "Autre",
+      "startDate": "2021-12-22",
+      "endDate": "2022-12-01",
+      "currency": "EUR",
+      "beneficiaries": [
+        {
+          "id": "62d31843e00831a62331a8ed",
+          "firstName": "Alberta",
+          "lastName": "Graham",
+          "relation": "Enfant",
+          "NSS": 58280087271,
+          "birthDate": "2010-05-02"
+        }
+      ],
+      "sumBeneficiaries": 1,
+      "bankAccounts": [
+        {
+          "link": "P",
+          "paymentMode": "Chèque",
+          "iban": 8198223242756114,
+          "currency": "USD"
+        },
+        {
+          "link": "P",
+          "paymentMode": "Chèque",
+          "iban": 1634731819328091,
+          "currency": "USD"
+        }
+      ],
+      "guarantees": [
+        {
+          "id": "62d318438c8f55e199a25cc5",
+          "name": "magna proident pariatur"
+        },
+        {
+          "id": "62d3184347c03db78755544f",
+          "name": "esse cillum aliqua"
+        },
+        {
+          "id": "62d318439a837ed0ccb5bf0a",
+          "name": "irure amet excepteur"
+        },
+        {
+          "id": "62d318435e356be0e7d304da",
+          "name": "voluptate ad adipisicing"
+        },
+        {
+          "id": "62d318433a80c7530b9eb7ee",
+          "name": "commodo officia ullamco"
+        }
+      ],
+      "documents": [
+        {
+          "id": "62d31843fd77de72733208aa",
+          "name": "sint do labore",
+          "url": ""
+        },
+        {
+          "id": "62d3184330fcd832c71b026e",
+          "name": "incididunt dolor duis",
+          "url": ""
+        },
+        {
+          "id": "62d31843069bbdcb9dbefb00",
+          "name": "sunt aliqua fugiat",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "id": "62d31843ae3376c6d98efa20",
+      "risk": "Santé",
+      "startDate": "2021-12-03",
+      "endDate": "2022-12-04",
+      "currency": "EUR",
+      "beneficiaries": [
+        {
+          "id": "62d318438b9ba333b5403e45",
+          "firstName": "Genevieve",
+          "lastName": "Webster",
+          "relation": "Enfant",
+          "NSS": 32744006271,
+          "birthDate": "2020-01-25"
+        },
+        {
+          "id": "62d318433948345a63d7223b",
+          "firstName": "Aisha",
+          "lastName": "Lawrence",
+          "relation": "Enfant",
+          "NSS": 85565931311,
+          "birthDate": "2017-10-02"
+        }
+      ],
+      "sumBeneficiaries": 2,
+      "bankAccounts": [
+        {
+          "link": "C",
+          "paymentMode": "Chèque",
+          "iban": 5204880445941254,
+          "currency": "USD"
+        },
+        {
+          "link": "C",
+          "paymentMode": "Chèque",
+          "iban": 7401720557289932,
+          "currency": "EUR"
+        }
+      ],
+      "guarantees": [
+        {
+          "id": "62d31843fe701d093f5e6492",
+          "name": "velit occaecat fugiat"
+        }
+      ],
+      "documents": [
+        {
+          "id": "62d318438ec78852e4bbe9ec",
+          "name": "nostrud ex officia",
+          "url": ""
+        },
+        {
+          "id": "62d31843961ed3ac541f97b4",
+          "name": "veniam non magna",
+          "url": ""
+        }
+      ]
+    }
+  ]
+}
