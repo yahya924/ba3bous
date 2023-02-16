@@ -1,0 +1,116 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  creationTimestamp: null
+  labels:
+    io.kompose.service: documents
+  name: documents
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 100Mi
+status: {}
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    kompose.cmd: kompose convert
+    kompose.version: 1.26.0 (40646f47)
+  creationTimestamp: null
+  labels:
+    io.kompose.service: extranet
+  name: extranet
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      io.kompose.service: extranet
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      annotations:
+        kompose.cmd: kompose convert
+        kompose.version: 1.26.0 (40646f47)
+      creationTimestamp: null
+      labels:
+        io.kompose.network/extranet: "true"
+        io.kompose.service: extranet
+    spec:
+      containers:
+        - env:
+            - name: STRIPE_PUBLISHABLE_KEY
+              value: pk_test_51M4MHsDbEmk7L7mjMnQqxb6uJdXsgY2jRzekTCyYxq167jgiUdbyUrUY0S7WMRx6qyZI9JK7bFmgvnIP3z1ikbzf00tO31oCYc
+            - name: STRIPE_SECRET_KEY
+              value: sk_test_51M4MHsDbEmk7L7mjKCpDrqdBts1r21BWDfHYNTByP3EHqcGBrsd17yd2oCjLxizzBP1nnkocOc8BRLQl1pDJsIVT00FGeXeTJS
+            - name: TZ
+              value: UTC-1
+          image: extranet
+          name: api-extranet
+          ports:
+            - containerPort: 8080
+          resources: {}
+          volumeMounts:
+            - mountPath: /usr/app/docs
+              name: documents
+      restartPolicy: Always
+      volumes:
+        - name: documents
+          persistentVolumeClaim:
+            claimName: documents
+status: {}
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  creationTimestamp: null
+  name: extranet
+spec:
+  ingress:
+    - from:
+        - podSelector:
+            matchLabels:
+              io.kompose.network/extranet: "true"
+  podSelector:
+    matchLabels:
+      io.kompose.network/extranet: "true"
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    kompose.cmd: kompose convert
+    kompose.version: 1.26.0 (40646f47)
+  creationTimestamp: null
+  labels:
+    io.kompose.service: extranet
+  name: extranet
+spec:
+  ports:
+    - name: "8080"
+      port: 8080
+      targetPort: 8080
+  selector:
+    io.kompose.service: extranet
+status:
+  loadBalancer: {}
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    kompose.cmd: kompose convert
+    kompose.version: 1.26.0 (40646f47)
+  creationTimestamp: null
+  labels:
+    io.kompose.service: nginx
+  name: nginx
+spec:
+  ports:
+    - name: "81"
+      port: 81
+      targetPort: 81
+  selector:
+    io.kompose.service: nginx
+status:
+  loadBalancer: {}
+
