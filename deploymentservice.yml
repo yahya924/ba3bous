@@ -9,13 +9,13 @@ kind: Service
 metadata:
   annotations:
     generated.by: 8gwifi.org
-  name: service.name.9
+  name: ouuuf
   namespace: default
 spec:
   ports:
-  - name: nameme_01
+  - name: nameme-01
     port: 81
-    protocol: tcp
+    protocol: TCP
     targetPort: 81
   selector:
     app: demo.87
@@ -24,12 +24,12 @@ spec:
 
 #This is Deployment Configuration Kube definition
 ---
-apiVersion: apps/v1beta1
+apiVersion: apps/v1 
 kind: Deployment
 metadata:
   labels:
     app: demo.87
-  name: deployment.name.78
+  name: nginx
   namespace: default
 spec:
   replicas: 1
@@ -46,40 +46,40 @@ spec:
       containers:
       - image: nginx
         imagePullPolicy: IfNotPresent
-        name: NGINX
+        name: nginx
         ports:
         - containerPort: 81
-          name: portname.0
-          protocol: tcp
+          name: portname-0
+          protocol: TCP
         volumeMounts:
         - mountPath: /etc/nginx/nginx.conf
-          name: pvo.0
+          name: pvo-0
         - mountPath: /etc/nginx/conf.d
-          name: pvo.1
+          name: pvo-1
         - mountPath: /usr/share/nginx/html
-          name: pvo.2
+          name: pvo-2
           readOnly: true
       terminationGracePeriodSeconds: 0
       volumes:
-      - name: pvo.0
+      - name: pvo-0
         persistentVolumeClaim:
           claimName: claimname.0
-      - name: pvo.1
+      - name: pvo-1
         persistentVolumeClaim:
           claimName: claimname.1
-      - name: pvo.2
+      - name: pvo-2
         persistentVolumeClaim:
           claimName: claimname.2
 
 #This is PersistentVolume Kube Object with Name
-#pvo.0.yml
+#pvo-0.yml
 ---
 apiVersion: v1
 kind: PersistentVolume
 metadata:
   annotations:
     generated.by: 8gwifi.org
-  name: pvo.0
+  name: pvo-0
   namespace: default
 spec:
   accessModes:
@@ -92,14 +92,14 @@ spec:
   persistentVolumeReclaimPolicy: Retain
 
 #This is PersistentVolume Kube Object with Name
-#pvo.1.yml
+#pvo-1.yml
 ---
 apiVersion: v1
 kind: PersistentVolume
 metadata:
   annotations:
     generated.by: 8gwifi.org
-  name: pvo.1
+  name: pvo-1
   namespace: default
 spec:
   accessModes:
@@ -112,14 +112,14 @@ spec:
   persistentVolumeReclaimPolicy: Retain
 
 #This is PersistentVolume Kube Object with Name
-#pvo.2.yml
+#pvo-2.yml
 ---
 apiVersion: v1
 kind: PersistentVolume
 metadata:
   annotations:
     generated.by: 8gwifi.org
-  name: pvo.2
+  name: pvo-2
   namespace: default
 spec:
   accessModes:
@@ -147,7 +147,7 @@ spec:
   resources:
     requests:
       storage: 1Gi
-  volumeName: pvo.0
+  volumeName: pvo-0
 
 #This is PersistentVolumeClaim Kube Object with Name
 #claimname.1.yml
@@ -165,7 +165,7 @@ spec:
   resources:
     requests:
       storage: 1Gi
-  volumeName: pvo.1
+  volumeName: pvo-1
 
 #This is PersistentVolumeClaim Kube Object with Name
 #claimname.2.yml
@@ -183,7 +183,7 @@ spec:
   resources:
     requests:
       storage: 1Gi
-  volumeName: pvo.2
+  volumeName: pvo-2
 
 #Generating kubernetes YAML file for the Service extranet.yml
 #This is Service Configuration Kube definition
@@ -193,13 +193,13 @@ kind: Service
 metadata:
   annotations:
     generated.by: 8gwifi.org
-  name: service.name.1
+  name: esm
   namespace: default
 spec:
   ports:
   - name: http
     port: 8080
-    protocol: tcp
+    protocol: TCP
     targetPort: 8080
   selector:
     app: demo.85
@@ -208,12 +208,12 @@ spec:
 
 #This is Deployment Configuration Kube definition
 ---
-apiVersion: apps/v1beta1
+apiVersion: apps/v1 
 kind: Deployment
 metadata:
   labels:
     app: demo.85
-  name: deployment.name.57
+  name: extranet
   namespace: default
 spec:
   replicas: 1
@@ -236,29 +236,29 @@ spec:
         - name: STRIPE_SECRET_KEY
           value: sk_test_51M4MHsDbEmk7L7mjKCpDrqdBts1r21BWDfHYNTByP3EHqcGBrsd17yd2oCjLxizzBP1nnkocOc8BRLQl1pDJsIVT00FGeXeTJS
         imagePullPolicy: IfNotPresent
-        name: api_extranet
+        name: api-extranet
         ports:
         - containerPort: 8080
-          name: portname.0
-          protocol: tcp
+          name: portname-0
+          protocol: TCP
         volumeMounts:
         - mountPath: /usr/app/docs
-          name: pvo.0
+          name: pvo-0
       terminationGracePeriodSeconds: 0
       volumes:
-      - name: pvo.0
+      - name: pvo-0
         persistentVolumeClaim:
           claimName: claimname.0
 
 #This is PersistentVolume Kube Object with Name
-#pvo.0.yml
+#pvo-0.yml
 ---
 apiVersion: v1
 kind: PersistentVolume
 metadata:
   annotations:
     generated.by: 8gwifi.org
-  name: pvo.0
+  name: pvo-0
   namespace: default
 spec:
   accessModes:
@@ -286,18 +286,18 @@ spec:
   resources:
     requests:
       storage: 1Gi
-  volumeName: pvo.0
+  volumeName: pvo-0
 
 #Generating kubernetes YAML file for the Service sagilea.yml
 
 #This is Deployment Configuration Kube definition
 ---
-apiVersion: apps/v1beta1
+apiVersion: apps/v1 
 kind: Deployment
 metadata:
   labels:
     app: demo.55
-  name: deployment.name.52
+  name: sagilea
   namespace: default
 spec:
   replicas: 1
